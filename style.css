@@ -1,0 +1,22 @@
+.main__div {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1rf);
+}
+
+.main__div__blok1 {
+    display: flex;
+    width: 992px;
+    margin-left: 150px;
+    flex-grow: 1;
+    padding: 25px;
+}
+
+p {
+    padding-right: 39px;
+}
+
+.image {
+    border-radius: 0 5% 5% 0;
+}
