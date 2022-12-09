@@ -1,4 +1,4 @@
-.body{
+.body {
     background-color: #E5E5E5;
 }
 
@@ -66,7 +66,7 @@ img {
     flex-grow: 1;
     padding: 25px;
     background-color: white;
-    border-radius:5% 5% 5% 5%;
+    border-radius: 5% 5% 5% 5%;
     padding: 0% 0% 0% 0%;
 }
 
@@ -83,7 +83,7 @@ img {
 
 /*Cаша*/
 .image__main_price {
-border-radius: 5% 0% 0% 5%;
+    border-radius: 5% 0% 0% 5%;
 }
 
 .h2 {
