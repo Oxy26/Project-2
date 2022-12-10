@@ -4,34 +4,34 @@
 
 /*Блок Оксаны*/
 
-p {
+.paragraph {
     float: left;
     margin-left: 140px;
 }
 
-ul {
+.generallist {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-li {
+.list {
     float: right;
     margin-right: 67px;
 }
 
-a {
+.link {
     display: block;
     padding: 15px;
     color: black;
     text-decoration: none;
 }
 
-a:visited {
+.link:visited {
     color: #3e343e;
 }
 
-a:hover {
+.link:hover {
     text-decoration: none;
     color: #eb1b1b;
     background: #f2e856e5;
@@ -42,7 +42,7 @@ a:hover {
     margin-left: 0px;
 }
 
-img {
+.germangirl {
     float: right;
     height: 500px;
     width: 600px;
