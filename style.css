@@ -168,3 +168,37 @@
     flex:50%;
 } 
 }
+
+/*Блок Алины*/
+.main__div__block4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__div__block4_certificates {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.main__div__block4_heading {
+    text-align: center;
+}
+
+.image__c1 {
+    height: 60vh;
+    width: 60%;
+    max-width: 100%;
+}
+
+.image__c2 {
+    height: 60vh;
+    width: 60%;
+    max-width: 100%;
+}
+
+.image__c3 {
+    height: 60vh;
+    width: 60%;
+    max-width: 100%;
+}
