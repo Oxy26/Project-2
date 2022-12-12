@@ -1,5 +1,5 @@
 .body {
-    /*background-color: #E5E5E5;*/
+    background-color:#ffffff;
 }
 
 /*Блок Оксаны*/
@@ -170,34 +170,43 @@
 }
 
 /*Блок Алины*/
-.main__div__block4 {
+
+.block-four {
     display: flex;
     flex-direction: column;
 }
 
-.main__div__block4_certificates {
+.block-four__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 }
 
-.main__div__block4_heading {
+.block-four__header {
     text-align: center;
 }
 
-.image__c1 {
+.block-four__title {
+    font-style: normal;
+font-weight: 700;
+font-size: 2.5rem;
+line-height: 150%;
+color: #e87400;
+}
+
+.image-one {
     height: 60vh;
     width: 60%;
     max-width: 100%;
 }
 
-.image__c2 {
+.image-two {
     height: 60vh;
     width: 60%;
     max-width: 100%;
 }
 
-.image__c3 {
+.image-three {
     height: 60vh;
     width: 60%;
     max-width: 100%;
