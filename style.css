@@ -1,13 +1,34 @@
 .body {
+<<<<<<< HEAD
     background-color: #E5E5E5;
+=======
+    /*background: color #f9faff;*/
+    background: url(/Project2-Team1/assets/images/germangirl1.png) no-repeat right top;
+    background-color: cover;
+    max-width: 1440px;
+    background-attachment: fixed;
+>>>>>>> 8906300062b837f7c9b46c9830fa998ca5493b62
 }
 
+.main{
+    background-color: #f9faff;
+}
 /*Блок Оксаны*/
+.header{
+    display: flex;
+    height: 480px;
+    
+}
 
 .paragraph {
     position: relative;
     float: left;
+<<<<<<< HEAD
     margin: 40px;
+=======
+    margin-left: 140px;
+    width: 480px;
+>>>>>>> 8906300062b837f7c9b46c9830fa998ca5493b62
 }
 
 .backgroundimage {
@@ -69,35 +90,87 @@
     margin-left: 0px;
 }
 
+<<<<<<< HEAD
+=======
+.germangirl {
+    float: right;
+    height: 500px;
+    width: 600px;
+    margin-right: 70px;
+    background-attachment: fixed;
+}
+
+>>>>>>> 8906300062b837f7c9b46c9830fa998ca5493b62
 /*Конец блока Оксаны */
 
 /*Блок Нади*/
 .main__div {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1rf);
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, 1rf);
 }
 
-.main__div__bloсk1 {
-    display: flex;
-    width: 992px;
-    margin-left: 150px;
-    flex-grow: 1;
-    padding: 25px;
-    background-color: white;
-    /*border-radius: 5% 5% 5% 5%;*/
-    padding: 0% 0% 0% 0%;
+.main__div__bloсk11 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 5% 25%);
 }
 
-.main__div__p {
-    padding-right: 39px;
+.container {
+	height: 100%;
+	width: 70%;
+	justify-self: center;
 }
 
-.image__main {
-    border-radius: 0 5% 5% 0;
-    margin: 0% 0% 0% 0%;
-    width: 600px;
+.main__div_items {
+	width: 400px;
+	height: 300px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(./assets/taxi-abstract-background-65.png);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container>.main__div_items:nth-child(2n) {
+	margin-left: 50%;
+}
+
+.main__div_items:last-child {
+	margin-bottom: 50px;
+}
+
+.main__div__text {
+	color: black;
+	width: 40%;
+	padding-top: 1em;
+}
+
+.main__div__h2 {
+	grid-area: 1/1/2/2;
+	justify-self: center;
+}
+
+.main__div__p1 {
+	grid-area: 2/1/3/2;
+	position: relative;
+}
+
+.main__div__p2 {
+	grid-area: 3/1/4/2;
+	position: relative;
+}
+
+.main__div__p3 {
+	grid-area: 4/1/5/2;
+	position: relative;
+}
+
+.main__div__p4 {
+	grid-area: 5/1/6/2;
+	position: relative;
 }
 
 /*Конец блока Нади */
@@ -117,77 +190,101 @@
 }
 
 /*Блок цена и услуги*/
-.pricing-table{
-    /*margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;*/
+.title{
+font-style: normal;
+font-weight: 700;
+font-size: 2.5rem;
+line-height: 150%;
+color: #e87400;
+text-align: center;
+margin-bottom: 20px;
+margin-top: 50px;
+}
+
+.block-services__prices{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+}
+
+.pricing-table{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: min(1440px, 100vw);
+    width: min(1200px, 100vw);
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    border: solid black 1px;
 }
 
 .pricing-card{
-    flex: 1;
-    max-width: 360px;
-    background-color: #fff;
-    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 0 1 100%;
+    padding-left: 15px;
     text-align: center;
-    cursor: pointer;
+    /*cursor: pointer;
     overflow: hidden;
-    color: #2d2d2d;
-    transition: .3s linear;
-    border-radius: 20px;
+    transition: .3s linear;*/
+    background-image: url(./assets/images/blob-2.svg);
+    background-color: cover;
+    background-size: 420px;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 420px;
+    height: 420px;
+    
 }
+
+/*.pricing-card__image .image{
+    object-fit: cover;
+}*/
     
 .pricing-card__header{
-    background-color: #fdc435;
+    /*background-color: #fdc435;*/
     display: inline-block;
-    color: #fff;
-    padding: 12px 30px;
+    color: black;
+    padding-top: 120px;
     border-radius: 10px;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 600;
-    transition: .4s linear; 
+    /*transition: .4s linear;*/
 }
 
-.pricing-card:hover .pricing-card__header {
+/*.pricing-card:hover .pricing-card__header {
     box-shadow: 0 0 0 26em #fdc435;
-}
+}*/
 
 .price{
-    font-size: 70px;
-    color: #fdc435;
-    margin: 20px 0;
-    transition: .2s linear;
+    color: white;
+    margin: 10px 0;
 }
 
 .price span{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
 }
 
-.pricing-card:hover, .pricing-card:hover .price{
+/*.pricing-card:hover, .pricing-card:hover .price{
     color: #fff;
-}
+}*/
 
 .pricing-card div{
-    font-size: 20px;
-    padding: 10px 0;
+    font-size: 18px;
+    padding: 10px;
     text-transform: uppercase;
     font-weight: 600;
 }
 
-@media screen and (max-width: 1100px) {
-.pricing-card{
-    flex:50%;
-} 
+@media (max-width: 1200px){
+    .pricing-card{
+        flex:50%;
+    }
 }
+
 
 /*Блок Алины*/
 
@@ -200,6 +297,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    justify-items: center; /*добавила выравнивание по центру*/
 }
 
 .block-four__header {
@@ -207,7 +305,7 @@
 }
 
 .block-four__title {
-    font-style: normal;
+font-style: normal;
 font-weight: 700;
 font-size: 2.5rem;
 line-height: 150%;
