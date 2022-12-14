@@ -1,5 +1,10 @@
+<<<<<<< HEAD
  .body {
     background-color: #E5E5E5;
+=======
+.body {
+    background-color:#ffffff;
+>>>>>>> 36058a157fddb5239080957488fa04e574c955fb
 }
 
 /*Блок Оксаны*/
@@ -59,14 +64,14 @@
     grid-template-rows: repeat(4, 1rf);
 }
 
-.main__div__blok1 {
+.main__div__bloсk1 {
     display: flex;
     width: 992px;
     margin-left: 150px;
     flex-grow: 1;
     padding: 25px;
     background-color: white;
-    border-radius: 5% 5% 5% 5%;
+    /*border-radius: 5% 5% 5% 5%;*/
     padding: 0% 0% 0% 0%;
 }
 
@@ -77,6 +82,7 @@
 .image__main {
     border-radius: 0 5% 5% 0;
     margin: 0% 0% 0% 0%;
+    width: 600px;
 }
 
 /*Конец блока Нади */
@@ -93,4 +99,120 @@
     line-height: 60px;
     letter-spacing: 0em;
     text-align: center;
+}
+
+/*Блок цена и услуги*/
+.pricing-table{
+    /*margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: min(1440px, 100vw);
+}
+
+.pricing-card{
+    flex: 1;
+    max-width: 360px;
+    background-color: #fff;
+    margin: 10px 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: #2d2d2d;
+    transition: .3s linear;
+    border-radius: 20px;
+}
+    
+.pricing-card__header{
+    background-color: #fdc435;
+    display: inline-block;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s linear; 
+}
+
+.pricing-card:hover .pricing-card__header {
+    box-shadow: 0 0 0 26em #fdc435;
+}
+
+.price{
+    font-size: 70px;
+    color: #fdc435;
+    margin: 20px 0;
+    transition: .2s linear;
+}
+
+.price span{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.pricing-card:hover, .pricing-card:hover .price{
+    color: #fff;
+}
+
+.pricing-card div{
+    font-size: 20px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1100px) {
+.pricing-card{
+    flex:50%;
+} 
+}
+
+/*Блок Алины*/
+
+.block-four {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-four__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.block-four__header {
+    text-align: center;
+}
+
+.block-four__title {
+    font-style: normal;
+font-weight: 700;
+font-size: 2.5rem;
+line-height: 150%;
+color: #e87400;
+}
+
+.image-one {
+    height: 60vh;
+    width: 60%;
+    max-width: 100%;
+}
+
+.image-two {
+    height: 60vh;
+    width: 60%;
+    max-width: 100%;
+}
+
+.image-three {
+    height: 60vh;
+    width: 60%;
+    max-width: 100%;
 }
