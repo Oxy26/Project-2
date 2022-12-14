@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+ .body {
+    background-color: #E5E5E5;
+=======
 .body {
     /*background: color #f9faff;*/
     background: url(/Project2-Team1/assets/images/germangirl1.png) no-repeat right top;
@@ -38,6 +42,7 @@
     padding: 15px;
     color: black;
     text-decoration: none;
+
 }
 
 .link:visited {
@@ -47,7 +52,6 @@
 .link:hover {
     text-decoration: none;
     color: #eb1b1b;
-    background: #f2e856e5;
 }
 
 .teachersname {
