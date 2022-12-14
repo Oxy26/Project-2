@@ -1,13 +1,5 @@
 .body {
-<<<<<<< HEAD
     background-color: #E5E5E5;
-=======
-    /*background: color #f9faff;*/
-    background: url(/Project2-Team1/assets/images/germangirl1.png) no-repeat right top;
-    background-color: cover;
-    max-width: 1440px;
-    background-attachment: fixed;
->>>>>>> 8906300062b837f7c9b46c9830fa998ca5493b62
 }
 
 .main{
@@ -23,12 +15,7 @@
 .paragraph {
     position: relative;
     float: left;
-<<<<<<< HEAD
     margin: 40px;
-=======
-    margin-left: 140px;
-    width: 480px;
->>>>>>> 8906300062b837f7c9b46c9830fa998ca5493b62
 }
 
 .backgroundimage {
@@ -90,17 +77,6 @@
     margin-left: 0px;
 }
 
-<<<<<<< HEAD
-=======
-.germangirl {
-    float: right;
-    height: 500px;
-    width: 600px;
-    margin-right: 70px;
-    background-attachment: fixed;
-}
-
->>>>>>> 8906300062b837f7c9b46c9830fa998ca5493b62
 /*Конец блока Оксаны */
 
 /*Блок Нади*/
