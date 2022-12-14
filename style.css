@@ -1,6 +1,6 @@
 .body {
     /*background: color #f9faff;*/
-    background: url(/Project2-Team1/assets/images/germangirl1.png) no-repeat right top;
+    background: url(./assets/images/germangirl1.png) no-repeat right top;
     background-color: cover;
     max-width: 1440px;
     background-attachment: fixed;
@@ -12,8 +12,7 @@
 /*Блок Оксаны*/
 .header{
     display: flex;
-    height: 480px;
-    
+    height: 520px;
 }
 
 .paragraph {
@@ -48,6 +47,7 @@
 .link:hover {
     text-decoration: none;
     color: #eb1b1b;
+    font-weight: 600;
 }
 
 .teachersname {
@@ -63,6 +63,7 @@
     background-attachment: fixed;
 }
 
+
 /*Конец блока Оксаны */
 
 /*Блок Нади*/
@@ -71,18 +72,25 @@
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(4, 1rf);
+    /*border: 1px solid black;*/
 }
 
 .main__div__bloсk11 {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(2, 5% 25%);
+    
 }
 
 .container {
 	height: 100%;
-	width: 70%;
+	width: 100%;
 	justify-self: center;
+    /*justify-content: center;
+    align-items: center;*/
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid black;
 }
 
 .main__div_items {
@@ -90,7 +98,7 @@
 	height: 300px;
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-image: url(./assets/taxi-abstract-background-65.png);
+	background-image: url(./assets/images/abstract-background.png);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -151,17 +159,25 @@
     text-align: center;
 }
 
-/*Блок цена и услуги*/
-.title{
-font-style: normal;
-font-weight: 700;
-font-size: 2.5rem;
-line-height: 150%;
-color: #e87400;
-text-align: center;
-margin-bottom: 20px;
-margin-top: 50px;
+/*Ира - Блок цена и услуги*/
+.block-services{
+    display: grid;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 0;
 }
+
+.title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 150%;
+    color: #e87400;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 50px;
+    border: 1px solid black;
+    }
 
 .block-services__prices{
     display: flex;
@@ -177,7 +193,7 @@ margin-top: 50px;
     margin: 0 auto;
     padding: 0;
     position: relative;
-    border: solid black 1px;
+    /*border: solid black 1px;*/
 }
 
 .pricing-card{
@@ -247,6 +263,7 @@ margin-top: 50px;
     }
 }
 
+/*Конец блока Иры*/
 
 /*Блок Алины*/
 
