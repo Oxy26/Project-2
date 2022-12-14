@@ -1,7 +1,3 @@
-<<<<<<< HEAD
- .body {
-    background-color: #E5E5E5;
-=======
 .body {
     /*background: color #f9faff;*/
     background: url(/Project2-Team1/assets/images/germangirl1.png) no-repeat right top;
@@ -71,48 +67,72 @@
 
 /*Блок Нади*/
 .main__div {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1rf);
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, 1rf);
 }
 
-.main__div__block1 {
-    display: flex;
-    width: 992px;
-    margin-left: 150px;
-    flex-grow: 1;
-    padding: 5px;
-    /*background-color: white;*/
-    /*border-radius: 5% 5% 5% 5%;*/
+.main__div__bloсk11 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 5% 25%);
 }
 
-.main__div__p {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0;
-    margin: 0;
-    
+.container {
+	height: 100%;
+	width: 70%;
+	justify-self: center;
 }
 
-.main__div__p:last-child{
-    padding: 0;
-    margin: 0;
+.main__div_items {
+	width: 400px;
+	height: 300px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(./assets/taxi-abstract-background-65.png);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.for-whom{
-    display: flex;
-    padding: 15px;
-    margin: 5px;
-    background-image: url(/Project2-Team1/assets/images/blob.svg);
-    background-repeat: no-repeat;
-
+.container>.main__div_items:nth-child(2n) {
+	margin-left: 50%;
 }
 
-.image__main {
-    border-radius: 0 5% 5% 0;
-    margin: 0% 0% 0% 0%;
-    width: 600px;
+.main__div_items:last-child {
+	margin-bottom: 50px;
+}
+
+.main__div__text {
+	color: black;
+	width: 40%;
+	padding-top: 1em;
+}
+
+.main__div__h2 {
+	grid-area: 1/1/2/2;
+	justify-self: center;
+}
+
+.main__div__p1 {
+	grid-area: 2/1/3/2;
+	position: relative;
+}
+
+.main__div__p2 {
+	grid-area: 3/1/4/2;
+	position: relative;
+}
+
+.main__div__p3 {
+	grid-area: 4/1/5/2;
+	position: relative;
+}
+
+.main__div__p4 {
+	grid-area: 5/1/6/2;
+	position: relative;
 }
 
 /*Конец блока Нади */
