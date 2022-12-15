@@ -1,7 +1,6 @@
 /*.body {
     background-color: #E5E5E5;
 }
-
 .main{
     background-color: #f9faff;
 }*/
@@ -175,187 +174,153 @@
     text-align: center;
 }
 
-/*Блок цена и услуги*/
-.pricing-table {
-
-    /*margin: 0;
+/*Ира - Блок цена и услуги*/
+.block-services {
+    display: grid;
+    margin-top: 100px;
+    margin-bottom: 50px;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;*/
-    /*Ира - Блок цена и услуги*/
-    .block-services {
-        display: grid;
-        margin-top: 100px;
-        margin-bottom: 50px;
-        padding: 0;
-    }
+}
 
-    .title {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 2.5rem;
-        line-height: 150%;
-        color: #e87400;
-        text-align: center;
-        margin-bottom: 0;
-        margin-top: 50px;
-        border: 1px solid black;
-    }
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 150%;
+    color: #e87400;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 50px;
+    border: 1px solid black;
+}
 
-    .block-services__prices {
-        display: flex;
-        flex-direction: row;
-    }
+.block-services__prices {
+    display: flex;
+    flex-direction: row;
+}
 
-    .pricing-table {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: min(1200px, 100vw);
-        margin: 0 auto;
-        padding: 0;
-        position: relative;
-        /*border: solid black 1px;*/
-    }
+.pricing-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: min(1200px, 100vw);
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    /*border: solid black 1px;*/
+}
 
-    .pricing-card {
-        flex: 1;
-        max-width: 360px;
-        background-color: #fff;
-        margin: 10px 10px;
-
-        .pricing-card {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            flex: 0 1 100%;
-            padding-left: 15px;
-            text-align: center;
-            /*cursor: pointer;
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 0 1 100%;
+    padding-left: 15px;
+    text-align: center;
+    /*cursor: pointer;
     overflow: hidden;
     transition: .3s linear;*/
-            background-image: url(./assets/images/blob-2.svg);
-            background-color: cover;
-            background-size: 420px;
-            background-repeat: no-repeat;
-            background-position: center;
-            max-width: 420px;
-            height: 420px;
+    background-image: url(./assets/images/blob-2.svg);
+    background-color: cover;
+    background-size: 420px;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 420px;
+    height: 420px;
 
-        }
+}
 
-        .pricing-card__header {
-            background-color: #fdc435;
-
-            /*.pricing-card__image .image{
+/*.pricing-card__image .image{
     object-fit: cover;
 }*/
 
-            .pricing-card__header {
-                /*background-color: #fdc435;*/
-                display: inline-block;
-                color: black;
-                padding-top: 120px;
-                border-radius: 10px;
-                font-size: 20px;
-                text-transform: uppercase;
-                font-weight: 600;
-                transition: .4s linear;
-                /*transition: .4s linear;*/
-            }
+.pricing-card__header {
+    /*background-color: #fdc435;*/
+    display: inline-block;
+    color: black;
+    padding-top: 120px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    /*transition: .4s linear;*/
+}
 
-            /*.pricing-card:hover .pricing-card__header {
+/*.pricing-card:hover .pricing-card__header {
     box-shadow: 0 0 0 26em #fdc435;
 }*/
 
-            .price {
-                font-size: 70px;
-                color: #fdc435;
-                margin: 20px 0;
-                transition: .2s linear;
+.price {
+    color: white;
+    margin: 10px 0;
+}
 
-                .price {
-                    color: white;
-                    margin: 10px 0;
-                }
+.price span {
+    font-size: 30px;
+    font-weight: 700;
+}
 
-                .price span {
-                    font-size: 35px;
-
-                    .price span {
-                        font-size: 30px;
-                        font-weight: 700;
-                    }
-
-                    .pricing-card:hover,
-                    .pricing-card:hover .price {
-                        /*.pricing-card:hover, .pricing-card:hover .price{
+/*.pricing-card:hover, .pricing-card:hover .price{
     color: #fff;
 }*/
 
-                        .pricing-card div {
-                            font-size: 18px;
-                            padding: 10px;
-                            text-transform: uppercase;
-                            font-weight: 600;
-                        }
+.pricing-card div {
+    font-size: 18px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 
-                        @media screen and (max-width: 1100px) {
-                            .pricing-card {
-                                flex: 50%;
-                            }
+@media (max-width: 1200px) {
+    .pricing-card {
+        flex: 50%;
+    }
+}
 
-                            @media (max-width: 1200px) {
-                                .pricing-card {
-                                    flex: 50%;
-                                }
-                            }
+/*Конец блока Иры*/
 
-                            /*Конец блока Иры*/
+/*Блок Алины*/
 
-                            /*Блок Алины*/
+.block-four {
+    display: flex;
+    flex-direction: column;
+}
 
-                            .block-four {
-                                display: flex;
-                                flex-direction: column;
-                            }
+.block-four__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    /*добавила выравнивание по центру*/
+}
 
-                            .block-four__container {
-                                display: grid;
-                                grid-template-columns: 1fr 1fr 1fr;
-                                align-items: center;
-                                justify-items: center;
-                                /*добавила выравнивание по центру*/
-                            }
+.block-four__header {
+    text-align: center;
+}
 
-                            .block-four__header {
-                                text-align: center;
-                            }
+.block-four__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 150%;
+    color: #e87400;
+}
 
-                            .block-four__title {
-                                font-style: normal;
-                                font-weight: 700;
-                                font-size: 2.5rem;
-                                line-height: 150%;
-                                color: #e87400;
-                            }
+.image-one {
+    height: 60vh;
+    width: 60%;
+    max-width: 100%;
+}
 
-                            .image-one {
-                                height: 60vh;
-                                width: 60%;
-                                max-width: 100%;
-                            }
+.image-two {
+    height: 60vh;
+    width: 60%;
+    max-width: 100%;
+}
 
-                            .image-two {
-                                height: 60vh;
-                                width: 60%;
-                                max-width: 100%;
-                            }
-
-                            .image-three {
-                                height: 60vh;
-                                width: 60%;
-                                max-width: 100%;
-                            }
+.image-three {
+    height: 60vh;
+    width: 60%;
+    max-width: 100%;
+}
