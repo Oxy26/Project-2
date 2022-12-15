@@ -1,31 +1,69 @@
-.body {
-    /*background-color: #E5E5E5;*/
+/*.body {
+    background-color: #E5E5E5;
 }
+
+.main{
+    background-color: #f9faff;
+}*/
 
 /*Блок Оксаны*/
+.header {
+    display: flex;
+    height: 480px;
+}
 
 .paragraph {
+    position: relative;
     float: left;
-    margin-left: 140px;
+    margin: 40px;
+    color: black;
+    width: 40%;
+    padding-top: 1em;
 }
 
-.generallist {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.list {
+.backgroundimage {
+    background-image: url("./assets/images/germangirl1.png");
+    height: 500px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     float: right;
-    margin-right: 67px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-.link {
+.container1 {
+    float: right;
+    margin: 10px;
+}
+
+.navbar {
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.navbar a {
+    color: #eb1b1b;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    transition: 1s linear;
+    cursor: pointer;
+    background-color: rgb(230, 129, 129);
+    color: rgb(110, 103, 103);
+}
+
+/*.link {
     display: block;
     padding: 15px;
     color: black;
     text-decoration: none;
-}
+}*/
 
 .link:visited {
     color: #3e343e;
@@ -34,19 +72,12 @@
 .link:hover {
     text-decoration: none;
     color: #eb1b1b;
-    background: #f2e856e5;
+    font-weight: 600;
 }
 
 .teachersname {
     float: left;
     margin-left: 0px;
-}
-
-.germangirl {
-    float: right;
-    height: 500px;
-    width: 600px;
-    margin-right: 70px;
 }
 
 /*Конец блока Оксаны */
@@ -57,26 +88,55 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1rf);
+    /*border: 1px solid black;*/
 }
 
-.main__div__bloсk1 {
+.main__div__bloсk11 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 5% 25% 25% 25% 25%);
+    grid-template-rows: repeat(2, 5% 25%);
+
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    justify-self: center;
+    /*justify-content: center;
+    align-items: center;*/
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.main__div_items {
+    width: 400px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./assets/images/abstract-background.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container>.main__div_items:nth-child(2n) {
+    margin-left: 50%;
+}
+
+.main__div_items:last-child {
+    margin-bottom: 50px;
+}
+
+.main__div__text {
+    color: black;
+    width: 40%;
+    padding-top: 1em;
 }
 
 .main__div__h2 {
     grid-area: 1/1/2/2;
     justify-self: center;
-}
-
-.main__div__text {
-    position: absolute;
-    top: 50%;
-    color: black;
-    width: 330px;
-    padding: 0px;
-    text-align: center;
 }
 
 .main__div__p1 {
@@ -117,74 +177,185 @@
 
 /*Блок цена и услуги*/
 .pricing-table {
+
     /*margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;*/
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: min(1440px, 100vw);
-}
-
-.pricing-card {
-    flex: 1;
-    max-width: 360px;
-    background-color: #fff;
-    margin: 10px 10px;
-    text-align: center;
-    cursor: pointer;
-    overflow: hidden;
-    color: #2d2d2d;
-    transition: .3s linear;
-    border-radius: 20px;
-}
-
-.pricing-card__header {
-    background-color: #fdc435;
-    display: inline-block;
-    color: #fff;
-    padding: 12px 30px;
-    border-radius: 10px;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: .4s linear;
-}
-
-.pricing-card:hover .pricing-card__header {
-    box-shadow: 0 0 0 26em #fdc435;
-}
-
-.price {
-    font-size: 70px;
-    color: #fdc435;
-    margin: 20px 0;
-    transition: .2s linear;
-}
-
-.price span {
-    font-size: 35px;
-    font-weight: 700;
-}
-
-.pricing-card:hover,
-.pricing-card:hover .price {
-    color: #fff;
-}
-
-.pricing-card div {
-    font-size: 20px;
-    padding: 10px 0;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-@media screen and (max-width: 1100px) {
-    .pricing-card {
-        flex: 50%;
+    /*Ира - Блок цена и услуги*/
+    .block-services {
+        display: grid;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        padding: 0;
     }
-}
+
+    .title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 150%;
+        color: #e87400;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 50px;
+        border: 1px solid black;
+    }
+
+    .block-services__prices {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .pricing-table {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: min(1200px, 100vw);
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        /*border: solid black 1px;*/
+    }
+
+    .pricing-card {
+        flex: 1;
+        max-width: 360px;
+        background-color: #fff;
+        margin: 10px 10px;
+
+        .pricing-card {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            flex: 0 1 100%;
+            padding-left: 15px;
+            text-align: center;
+            /*cursor: pointer;
+    overflow: hidden;
+    transition: .3s linear;*/
+            background-image: url(./assets/images/blob-2.svg);
+            background-color: cover;
+            background-size: 420px;
+            background-repeat: no-repeat;
+            background-position: center;
+            max-width: 420px;
+            height: 420px;
+
+        }
+
+        .pricing-card__header {
+            background-color: #fdc435;
+
+            /*.pricing-card__image .image{
+    object-fit: cover;
+}*/
+
+            .pricing-card__header {
+                /*background-color: #fdc435;*/
+                display: inline-block;
+                color: black;
+                padding-top: 120px;
+                border-radius: 10px;
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: 600;
+                transition: .4s linear;
+                /*transition: .4s linear;*/
+            }
+
+            /*.pricing-card:hover .pricing-card__header {
+    box-shadow: 0 0 0 26em #fdc435;
+}*/
+
+            .price {
+                font-size: 70px;
+                color: #fdc435;
+                margin: 20px 0;
+                transition: .2s linear;
+
+                .price {
+                    color: white;
+                    margin: 10px 0;
+                }
+
+                .price span {
+                    font-size: 35px;
+
+                    .price span {
+                        font-size: 30px;
+                        font-weight: 700;
+                    }
+
+                    .pricing-card:hover,
+                    .pricing-card:hover .price {
+                        /*.pricing-card:hover, .pricing-card:hover .price{
+    color: #fff;
+}*/
+
+                        .pricing-card div {
+                            font-size: 18px;
+                            padding: 10px;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                        }
+
+                        @media screen and (max-width: 1100px) {
+                            .pricing-card {
+                                flex: 50%;
+                            }
+
+                            @media (max-width: 1200px) {
+                                .pricing-card {
+                                    flex: 50%;
+                                }
+                            }
+
+                            /*Конец блока Иры*/
+
+                            /*Блок Алины*/
+
+                            .block-four {
+                                display: flex;
+                                flex-direction: column;
+                            }
+
+                            .block-four__container {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr;
+                                align-items: center;
+                                justify-items: center;
+                                /*добавила выравнивание по центру*/
+                            }
+
+                            .block-four__header {
+                                text-align: center;
+                            }
+
+                            .block-four__title {
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 2.5rem;
+                                line-height: 150%;
+                                color: #e87400;
+                            }
+
+                            .image-one {
+                                height: 60vh;
+                                width: 60%;
+                                max-width: 100%;
+                            }
+
+                            .image-two {
+                                height: 60vh;
+                                width: 60%;
+                                max-width: 100%;
+                            }
+
+                            .image-three {
+                                height: 60vh;
+                                width: 60%;
+                                max-width: 100%;
+                            }
