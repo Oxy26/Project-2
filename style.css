@@ -362,7 +362,30 @@ h1{
 }
 
 /*Ира - contact-form*/
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    text-align: left;
+    height: 40vh;
+    width: 400px;
+}
 
+.form-input{
+    padding-bottom: 10px;
+    width: 400px;
+}
+
+label{
+    font-size: 16px;
+}
+
+textarea{
+    display: block;
+    width: 400px;
+}
 
 /*Ира - footer*/
 .footer {
