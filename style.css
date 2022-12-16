@@ -112,17 +112,17 @@ h1 {
     align-items: center;
     margin: 0 auto;
     margin-top: 50px;
-    height: 550px;
-    width: 760px;
-    background-image: url(./assets/blobs/blob\ \(10\).svg);
+    height: 350px;
+    width: 560px;
+    background-image: url(./assets/blobs/Group\ 5.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .main__div__text {
     color: black;
-    width: 40%;
-    padding-right: 25%;
+    width: 35%;
+    padding-right: 5%
 }
 
 .main__div__icon {
@@ -131,12 +131,13 @@ h1 {
     align-items: center;
     margin: 0 auto;
     margin-top: 50px;
-    height: 550px;
+    height: 450px;
     width: 760px;
 }
 
 .main__div__img {
-    width: 15%;
+    width: 25%;
+    padding-bottom: 20%;
 }
 
 @media (max-width: 1200px) {
