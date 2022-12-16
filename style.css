@@ -341,3 +341,31 @@ h1 {
 .main__div__block5 {
     border: 1px solid black;
 }
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    height: 260px;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/images/footer-bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .footer img {
+    width: 36px;
+    height: 36px;
+  }
+  .footer .footer__messangers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .footer .footer__messangers .messanger {
+    margin: 10px;
+  }
