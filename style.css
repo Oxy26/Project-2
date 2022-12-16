@@ -114,7 +114,7 @@ h1 {
     margin-top: 50px;
     height: 550px;
     width: 760px;
-    background-image: url(./blobs/blob\ \(10\).svg);
+    background-image: url(./assets/blobs/blob\ \(10\).svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -353,19 +353,21 @@ h1 {
     background-image: url(./assets/images/footer-bg.svg);
     background-repeat: no-repeat;
     background-position: bottom;
-  }
-  .footer img {
+}
+
+.footer img {
     width: 36px;
     height: 36px;
-  }
-  .footer .footer__messangers {
+}
+
+.footer .footer__messangers {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-  }
-  
-  .footer .footer__messangers .messanger {
+}
+
+.footer .footer__messangers .messanger {
     margin: 10px;
-  }
+}
