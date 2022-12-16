@@ -11,9 +11,10 @@
     height: 480px;
 }
 
-h1{
+h1 {
     font-family: 'Nunito', sans-serif, bold;
 }
+
 .paragraph {
     font-family: 'Nunito', sans-serif;
     position: relative;
@@ -86,86 +87,67 @@ h1{
 
 /*Конец блока Оксаны */
 
+
 /*Блок Нади*/
-.main__div {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1rf);
-    /*border: 1px solid black;*/
-}
-
-.main__div__bloсk11 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 5% 25%);
-
-}
-
 .container {
     height: 100%;
     width: 100%;
-    justify-self: center;
-    /*justify-content: center;
-    align-items: center;*/
-    margin: 0 auto;
-    padding: 0;
-    /*border: 1px solid black;*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.main__blok1,
+.main__blok2,
+.main__blok3,
+.main__blok4 {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin-left: 15%;
 }
 
 .main__div_items {
-    width: 400px;
-    height: 300px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url(./assets/images/abstract-background.png);
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.container>.main__div_items:nth-child(2n) {
-    margin-left: 50%;
-}
-
-.main__div_items:last-child {
-    margin-bottom: 50px;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 550px;
+    width: 760px;
+    background-image: url(./blobs/blob\ \(10\).svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .main__div__text {
     color: black;
     width: 40%;
-    padding-top: 1em;
+    padding-right: 25%;
 }
 
-.main__div__h2 {
-    grid-area: 1/1/2/2;
-    justify-self: center;
+.main__div__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 550px;
+    width: 760px;
 }
 
-.main__div__p1 {
-    grid-area: 2/1/3/2;
-    position: relative;
+.main__div__img {
+    width: 15%;
 }
 
-.image {
-    grid-area: 2/2/3/3;
-    position: relative;
-}
+@media (max-width: 1200px) {
 
-.main__div__p2 {
-    grid-area: 3/1/4/2;
-    position: relative;
-}
-
-.main__div__p3 {
-    grid-area: 4/1/5/2;
-    position: relative;
-}
-
-.main__div__p4 {
-    grid-area: 5/1/6/2;
-    position: relative;
+    .main__blok1,
+    .main__blok2,
+    .main__blok3,
+    .main__blok4 {
+        flex: 50%;
+    }
 }
 
 /*Конец блока Нади */
@@ -248,7 +230,7 @@ h1{
 .pricing-card__header {
     /*background-color: #fdc435;*/
     display: inline-block;
-    color: #f30000;  
+    color: #f30000;
     padding-top: 120px;
     border-radius: 10px;
     font-size: 20px;
@@ -282,11 +264,11 @@ h1{
     font-weight: 600;
 }
 
-.pricing-card__details{
+.pricing-card__details {
     color: black;
 }
 
-.free-lesson{
+.free-lesson {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,7 +281,7 @@ h1{
     background-size: contain;
 }
 
-.free-lesson h2 span{
+.free-lesson h2 span {
     color: #f30000;
 }
 
@@ -357,7 +339,7 @@ h1{
     max-width: 100%;
 }
 
-.main__div__block5{
+.main__div__block5 {
     border: 1px solid black;
 }
 
