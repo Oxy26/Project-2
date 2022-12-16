@@ -1,9 +1,8 @@
-/*.body {
+.body {
     background-color: #E5E5E5;
+    font-family: 'Nunito', sans-serif;
 }
-.main{
-    background-color: #f9faff;
-}*/
+
 
 /*Блок Оксаны*/
 .header {
@@ -11,7 +10,11 @@
     height: 480px;
 }
 
+h1{
+    font-family: 'Nunito', sans-serif, bold;
+}
 .paragraph {
+    font-family: 'Nunito', sans-serif;
     position: relative;
     float: left;
     margin: 40px;
@@ -38,6 +41,7 @@
 }
 
 .navbar {
+    font-family: 'Nunito', sans-serif, bold;
     overflow: hidden;
     margin-right: 10px;
 }
@@ -226,7 +230,7 @@
     /*cursor: pointer;
     overflow: hidden;
     transition: .3s linear;*/
-    background-image: url(./assets/images/blob-2.svg);
+    background-image: url(./assets/images/price.svg);
     background-color: cover;
     background-size: 420px;
     background-repeat: no-repeat;
@@ -243,7 +247,7 @@
 .pricing-card__header {
     /*background-color: #fdc435;*/
     display: inline-block;
-    color: black;
+    color: #f30000;  
     padding-top: 120px;
     border-radius: 10px;
     font-size: 20px;
@@ -257,7 +261,7 @@
 }*/
 
 .price {
-    color: white;
+    color: black;
     margin: 10px 0;
 }
 
@@ -275,6 +279,27 @@
     padding: 10px;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.pricing-card__details{
+    color: black;
+}
+
+.free-lesson{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 260px;
+    width: 760px;
+    background-image: url(./assets/images/free-lesson.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.free-lesson h2 span{
+    color: #f30000;
 }
 
 @media (max-width: 1200px) {
@@ -329,4 +354,8 @@
     height: 60vh;
     width: 60%;
     max-width: 100%;
+}
+
+.main__div__block5{
+    border: 1px solid black;
 }
