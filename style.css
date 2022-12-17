@@ -4,14 +4,12 @@
     min-height: 100vh;
 }
 
-
 /*Блок Оксаны*/
 .header {
     display: flex;
     height: 600px;
     margin-bottom: 50px;
 }
-
 
 h1 {
     margin-left: 125px;
@@ -88,13 +86,6 @@ video {
     background-color: rgb(230, 129, 129);
     color: rgb(110, 103, 103);
 }
-
-/*.link {
-    display: block;
-    padding: 15px;
-    color: black;
-    text-decoration: none;
-}*/
 
 .link:visited {
     color: #3e343e;
