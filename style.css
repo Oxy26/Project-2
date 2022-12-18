@@ -330,14 +330,17 @@ video {
 .block-four {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .block-four__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+     min-width: 100%;
+    min-height: 28rem;
+    display: flex;
+    overflow-x: auto;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     /*добавила выравнивание по центру*/
 }
 
@@ -353,23 +356,20 @@ video {
     color: #e87400;
 }
 
-.image-one {
-    height: 60vh;
-    width: 60%;
-    max-width: 100%;
+.certificate {
+    justify-self: center;
+    height: 23rem;
+    width: 16rem;
+    margin: 2rem;
+    border: 0.15rem solid#e87400;
+    transition: 1s;
 }
 
-.image-two {
-    height: 60vh;
-    width: 60%;
-    max-width: 100%;
+.certificate:hover {
+transform: scale(1.2);
 }
 
-.image-three {
-    height: 60vh;
-    width: 60%;
-    max-width: 100%;
-}
+/*Конец блока Алины*/
 
 .main__div__block5 {
     border: 1px solid black;
