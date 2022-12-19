@@ -249,6 +249,7 @@ video {
     flex-wrap: wrap;
     flex: 0 1 100%;
     padding-left: 15px;
+    margin: 40px;
     text-align: center;
     /*cursor: pointer;
     overflow: hidden;
@@ -259,7 +260,7 @@ video {
     background-repeat: no-repeat;
     background-position: center;
     max-width: 420px;
-    height: 420px;
+    height: 340px;
 
 }
 
@@ -269,13 +270,15 @@ video {
 
 .pricing-card__header {
     /*background-color: #fdc435;*/
+    font-family:'Source Sans Pro', sans-serif;
+    font-size: 28px;
     display: inline-block;
-    color: #f30000;
-    padding-top: 120px;
+    color: #cf0f0f;
+    padding-top: 100px;
+    padding-bottom: 20px;
     border-radius: 10px;
-    font-size: 20px;
     text-transform: uppercase;
-    font-weight: 600;
+    margin: 0;
     /*transition: .4s linear;*/
 }
 
@@ -285,7 +288,7 @@ video {
 
 .price {
     color: black;
-    margin: 10px 0;
+    margin: 0;
 }
 
 .price span {
@@ -305,7 +308,9 @@ video {
 }
 
 .pricing-card__details {
+    text-align: center;
     color: black;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .free-lesson {
@@ -314,15 +319,26 @@ video {
     align-items: center;
     margin: 0 auto;
     margin-top: 50px;
-    height: 260px;
-    width: 760px;
+    height: 240px;
+    width: 900px;
     background-image: url(./assets/images/free-lesson.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .free-lesson h2 span {
-    color: #f30000;
+    color: #cf0f0f;
+}
+
+.free-lesson__icon img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin: 0 auto;
+    margin-right: 20px;
+    padding: 0;
 }
 
 @media (max-width: 1200px) {
@@ -379,11 +395,15 @@ video {
     max-width: 100%;
 }
 
-.main__div__block5 {
-    border: 1px solid black;
+/*Ира - contact-form*/
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
 }
 
-/*Ира - contact-form*/
 .contact-form{
     display: flex;
     flex-direction: column;
@@ -408,6 +428,7 @@ textarea{
     display: block;
     width: 400px;
 }
+
 
 /*Ира - footer*/
 .footer {
