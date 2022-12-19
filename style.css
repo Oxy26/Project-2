@@ -380,13 +380,13 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: auto;
 }
 
 .block-four__container {
     min-width: 100%;
     min-height: 28rem;
     display: flex;
-    overflow-x: auto;
     align-items: center;
     justify-content: center;
     /*добавила выравнивание по центру*/
@@ -409,7 +409,7 @@ video {
     height: 23rem;
     width: 16rem;
     margin: 2rem;
-    border: 0.15rem solid#e87400;
+    border: 0.15rem solid #e87400;
     transition: 1s;
 }
 
