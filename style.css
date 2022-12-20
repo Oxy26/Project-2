@@ -17,9 +17,11 @@
 /*Блок Оксаны*/
 .header {
     display: flex;
-    height: 600px;
+    height: 500px;
     margin-bottom: 50px;
 }
+
+main__div__icon
 
 h1 {
     margin-left: 125px;
@@ -124,11 +126,16 @@ video {
 
 /*Блок Нади*/
 .container {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1800px;
     width: 100%;
-    display: grid;
+    margin-top: ;
+    /*display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 7% 20% 20% 20% 20%);
+    grid-template-rows: repeat(5, 7% 20% 20% 20% 20%);*/
 }
 
 .main__block1,
@@ -137,9 +144,17 @@ video {
 .main__block4 {
     display: flex;
     flex-direction: row;
-    width: 80%;
-    margin-left: 15%;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+    margin: 0 0 0 10%;
+    margin-bottom: 50px;
 }
+
+/*svg{
+
+}*/
 
 .main__block1,
 .main__block3 {
@@ -159,22 +174,23 @@ video {
     align-items: center;
     margin: 0 auto;
     padding: 0;
-    height: 350px;
-    width: 450px;
+    height: 100%;
+    width: 100%;
     background-image: url(./assets/blobs/Group\ 8\ \(1\).png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
-.main__div__text {
+.main__div__text{
     display: flex;
-    font-weight: 550;
+    font-size: 28px;
+    font-weight: 600;
     color: black;
-    width: 70%;
-    height: 50%;
-    padding-right: 15%;
-    padding-left: 45px;
+    width: 50%;
+    height: 100%;
+    padding-right: 3%;
+    padding-left: 7%;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -196,16 +212,32 @@ video {
 }
 
 .main__div__block11 {
-    margin-top: 50px;
+    /*margin-top: 50px;*/
+    margin: 0 auto;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
 
     .main__block1,
     .main__block2,
     .main__block3,
     .main__block4 {
         flex: 50%;
+    }
+
+    .main__div__text{
+        display: flex;
+        font-size: 20px;
+        font-weight: 600;
+        color: black;
+        width: 80%;
+        height: 80%;
+        padding-right: 3%;
+        padding-left: 7%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
     }
 }
 
@@ -225,6 +257,41 @@ video {
     text-align: center;
 }
 
+/*Начало блока про платформы - Оксана*/
+
+.platformsinfo {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 150%;
+    color: #e87400;
+    margin-left: 220px;
+    margin-top: 0;
+}
+
+.platforms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 240px;
+    width: 900px;
+    background-image: url(./assets/images/free-lesson.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.platformicons {
+    flex-direction: row;
+    align-content: center;
+    height: 100px;
+    width: 100px;
+    margin: 35px;
+}
+
+/*Конец блока про платформы - Оксана*/
+
 /*Ира - Блок цена и услуги*/
 .block-services {
     display: grid;
@@ -242,7 +309,7 @@ video {
     color: #e87400;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     margin-top: 50px;
     width: 100%;
 }
@@ -489,7 +556,7 @@ video {
     background-image: url(./assets/images/footer-bg.svg);
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: 480px;
+    background-size: 1440px;
 }
 
 .footer__row {
