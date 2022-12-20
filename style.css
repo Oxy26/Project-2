@@ -442,3 +442,20 @@ textarea {
 .footer .footer__messangers .messanger {
     margin: 10px;
 }
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .content {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 760px) {
+    .content {
+        max-width: none;
+    }
+}
