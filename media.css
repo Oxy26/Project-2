@@ -19,10 +19,9 @@
     padding-top: 30px;
  }
 
-.block-video{
-    
-margin-top: 50px;
-margin-left: 130px;
+.block-video{   
+    margin-top: 50px;
+    margin-left: 130px;
 }
 
 .paragraph{
@@ -30,7 +29,7 @@ margin-left: 130px;
     margin-left: 0px;
     padding: 10px 10px;
     height: auto;
-    font: 1.5em sans-serif;
+    font: 1.1em sans-serif;
     width: 100%;
 }
 
@@ -54,7 +53,7 @@ margin-left: 130px;
 }
 
 .free-lesson__text{
-font: bold 1.5em sans-serif;
+    font: bold 1.5em sans-serif;
 }
 
 .platforms {
