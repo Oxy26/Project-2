@@ -1,0 +1,58 @@
+/*когда экран <900px*/
+.td1_background {
+    background-image: url(./assets/images/germangirl1.png);
+    height: 55vh;
+    max-height: 60vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin-bottom: 10px;
+    background-color: #fac72cf9;
+    float: right; 
+    overflow-x: hidden;
+    
+}
+
+ h1 {
+    margin-left: 250px;
+    padding-top: 30px;
+ }
+
+.block-video{
+margin-top: 50px;
+margin-left: 80px;
+}
+
+.paragraph{
+    background-color: #fac72cf9;
+    margin-left: 0px;
+    padding: 10px 10px;
+    height: auto;
+    font: 1.5em sans-serif;
+    width: 100%;
+}
+
+.td1 {
+    width: 100%;
+
+}
+ 
+.td2 {
+    display: none;
+}
+
+.main {
+    margin-top: 15%;
+}
+
+.free-lesson {
+    border: none;
+    width: 90%;
+    height: 240px;  
+}
+
+.free-lesson__text{
+font: bold 1.5em sans-serif;
+}
+

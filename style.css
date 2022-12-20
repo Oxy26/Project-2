@@ -1,7 +1,17 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .body {
-    background-color: #E5E5E5;
+    background-color: #e5e5e59f;
     font-family: 'Source Sans Pro', sans-serif;
     min-height: 100vh;
+}
+
+.wrapper {
+    max-width: 1440px;
 }
 
 /*Блок Оксаны*/
@@ -212,7 +222,9 @@ video {
 /*Ира - Блок цена и услуги*/
 .block-services {
     display: grid;
-    margin-top: 100px;
+    margin-left: -5%;
+    /*чтобы не создавался скрол вправо*/
+    margin-top: 20px;
     margin-bottom: 50px;
     padding: 0;
 }
@@ -221,11 +233,13 @@ video {
     font-style: normal;
     font-weight: 700;
     font-size: 2.5rem;
-    line-height: 150%;
+    line-height: 100%;
     color: #e87400;
     text-align: center;
-    margin-bottom: 50px;
+    margin: 0 auto;
+    margin-bottom: 30px;
     margin-top: 50px;
+    width: 100%;
     /*border: 1px solid black;*/
 }
 
@@ -239,7 +253,8 @@ video {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: min(1200px, 100vw);
+    flex-wrap: wrap;
+    width: min(1440px, 100vw);
     margin: 0 auto;
     padding: 0;
     position: relative;
@@ -250,8 +265,9 @@ video {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex: 0 1 100%;
+    flex: 1 1 100%;
     padding-left: 15px;
+    margin: 40px;
     text-align: center;
     /*cursor: pointer;
     overflow: hidden;
@@ -262,7 +278,8 @@ video {
     background-repeat: no-repeat;
     background-position: center;
     max-width: 420px;
-    height: 420px;
+    height: 340px;
+    border: 1px solid gray;
 
 }
 
@@ -272,13 +289,16 @@ video {
 
 .pricing-card__header {
     /*background-color: #fdc435;*/
-    display: inline-block;
-    color: #f30000;
-    padding-top: 120px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    color: #cf0f0f;
+    padding-top: 100px;
+    padding-bottom: 20px;
     border-radius: 10px;
-    font-size: 20px;
     text-transform: uppercase;
-    font-weight: 600;
+    margin: 0;
     /*transition: .4s linear;*/
 }
 
@@ -288,7 +308,7 @@ video {
 
 .price {
     color: black;
-    margin: 10px 0;
+    margin: 0;
 }
 
 .price span {
@@ -308,7 +328,9 @@ video {
 }
 
 .pricing-card__details {
+    text-align: center;
     color: black;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .free-lesson {
@@ -317,21 +339,38 @@ video {
     align-items: center;
     margin: 0 auto;
     margin-top: 50px;
-    height: 260px;
-    width: 760px;
+    height: 240px;
+    width: 900px;
     background-image: url(./assets/images/free-lesson.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.free-lesson h2 span {
-    color: #f30000;
+.free-lesson__text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
 }
 
-@media (max-width: 1200px) {
-    .pricing-card {
-        flex: 50%;
-    }
+.free-lesson h2 span {
+    color: #cf0f0f;
+}
+
+.free-lesson__icon {
+    margin-right: 30px;
+    margin-left: 100px;
+}
+
+.free-lesson__icon img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin: 0;
+    padding: 0;
 }
 
 /*Конец блока Иры*/
@@ -343,13 +382,13 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: auto;
 }
 
 .block-four__container {
     min-width: 100%;
     min-height: 28rem;
     display: flex;
-    overflow-x: auto;
     align-items: center;
     justify-content: center;
     /*добавила выравнивание по центру*/
@@ -372,7 +411,7 @@ video {
     height: 23rem;
     width: 16rem;
     margin: 2rem;
-    border: 0.15rem solid#e87400;
+    border: 0.15rem solid #e87400;
     transition: 1s;
 }
 
@@ -380,27 +419,123 @@ video {
     transform: scale(1.2);
 }
 
-/*Конец блока Алины*/
-
-.main__div__block5 {
-    border: 1px solid black;
+.image-three {
+    height: 60vh;
+    width: 60%;
+    max-width: 100%;
 }
 
 /*Ира - contact-form*/
-.contact-form {
+
+/*Second version of the form*/
+.contact-me {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.form {
+    width: 30%;
+    padding: 32px;
+}
+
+.form__group {
+    position: relative;
+    margin-bottom: 32px;
+
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    color: rgb(87, 87, 87);
+    transition: .3s;
+    left: 0;
+}
+
+.form__input {
+    width: 100%;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    outline: none;
+}
+
+.form__input:focus {
+    border-bottom: 1px solid rgb(31, 31, 31);
+}
+
+.form__button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #e87400;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form__button:focus,
+.form__button:hover {
+    background-color: #e87400b7;
+}
+
+.form__input:focus~.form__label,
+.form__input:not(:placeholder-shown)~.form__label {
+    top: -18px;
+    font-size: small;
+    color: rgb(182, 182, 182);
+}
+
+
+/*First version of the form*/
+/*.contact-me{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
     border: 1px solid gray;
-    text-align: left;
-    height: 40vh;
+    text-align: center;
+    height: 250px;
     width: 400px;
 }
 
 .form-input {
     padding-bottom: 10px;
-    width: 400px;
+    width: 390px;
+    margin: 0;
+}
+
+input{
+    display: flex;   
+    width: 100%;
+    margin-left: -1%;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea{
+    display: flex;   
+    width: 100%;
+    margin-left: -1%;
+    align-items: center;
+    justify-content: center;
+    resize: none;
 }
 
 label {
@@ -412,18 +547,37 @@ textarea {
     width: 400px;
 }
 
+button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}*/
+
 /*Ира - footer*/
 .footer {
     display: flex;
     flex-direction: row;
     height: 260px;
     margin: 0 auto;
+    width: 100%;
     padding: 0;
     justify-content: center;
     align-items: center;
     background-image: url(./assets/images/footer-bg.svg);
     background-repeat: no-repeat;
     background-position: bottom;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 260px;
+    margin: 0;
+    padding: 0;
 }
 
 .footer img {
@@ -436,26 +590,52 @@ textarea {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin: 0;
+    margin-top: -5%;
 }
 
 .footer .footer__messangers .messanger {
     margin: 10px;
 }
 
-.content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-@media (max-width: 1200px) {
-    .content {
-        max-width: 750px;
+@media (max-width: 800px) {
+    .pricing-card {
+        flex: 50%;
     }
-}
 
-@media (max-width: 760px) {
-    .content {
-        max-width: none;
+    .free-lesson {
+        display: flex;
+        width: 100%;
+        height: 130px;
+        background-size: 100%;
+        border: 1px solid black;
+    }
+
+    .free-lesson__text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        font-size: medium;
+    }
+
+    .free-lesson h2 span {
+        color: #cf0f0f;
+    }
+
+    .free-lesson__icon {
+        margin-right: 20px;
+        margin-left: 50px;
+    }
+
+    .free-lesson__icon img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        margin: 0;
+        padding: 0;
     }
 }

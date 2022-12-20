@@ -14,6 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css" media="all and (max-width: 900px)">
     <title>Easy-German</title>
 </head>
 
@@ -24,8 +25,14 @@
             <header class="header">
                 <table>
                     <tr>
-                        <td>
-                            <h1>Hallo! Grüezi! Gruß Gott!</h1>
+                        <td class="td1">
+                            <div class="td1_background">
+                            <h1>Hallo! Grüezi! Grüß Gott!</h1>
+                            <div class="block-video">
+                                <video id="about" controls="controls" autoplay="autoplay" muted="">
+                                    <source src="./assets/Video.mp4">
+                                </video>
+                            </div>
                             <p class="paragraph">
                                 Меня зовут Анастасия Суменкова и я частный преподаватель немецкого языка, со стажем
                                 более 8 лет! Дипломированный переводчик, закончила МГОУ по специальности "Устный и
@@ -34,12 +41,9 @@
                                 На моих уроках всегда присутствует лёгкость, юмор, хорошее настроение, что в свою
                                 очередь приятным образом помогает Вам достичь Ваших языковых целей:
                             </p>
-                            <div class="block-video">
-                                <video id="about" controls="controls" autoplay="autoplay" muted="">
-                                    <source src="./assets/Video.mp4">
-                                </video>
-                            </div>
-                        <td>
+                        </div>
+                        </td>
+                        <td class="td2">
                             <div class="backgroundimage">
                                 <div class="container1">
                                     <div class="navbar">
@@ -302,9 +306,12 @@
                         </div>
                     </div>
                     <div class="free-lesson">
-                        <h2><span>БЕСПЛАТНЫЙ ПРОБНЫЙ УРОК&nbsp;</span>30 МИНУТ!</h2>
+                        <div class="free-lesson__icon"><img src="./assets/images/free-lesson6.png"
+                                alt="free-lesson-icon"></div>
+                        <h2 class="free-lesson__text"><span>БЕСПЛАТНЫЙ ПРОБНЫЙ УРОК&nbsp;</span>30 МИНУТ!</h2>
                     </div>
                 </div>
+                <!--Начало блока Алины-->
                 <div class="block-four">
                     <div class="block-four__header" id="certificates">
                         <h1 class="block-four__title">Достижения моих учеников</h1>
@@ -313,21 +320,56 @@
                         <img class="certificate" src="./assets/images/sertif1.png">
                         <img class="certificate" src="./assets/images/sertif2.png">
                         <img class="certificate" src="./assets/images/sertif3.png">
+                        <img class="certificate" src="./assets/images/sertif1.png">
+                        <img class="certificate" src="./assets/images/sertif2.png">
+                        <img class="certificate" src="./assets/images/sertif3.png">
                     </div>
                 </div>
-                <div class="main__div__block5" id="contacts">Contact me</div>
+                <div class="contact-me">
+                    <div class="contact-me__title title">Обратная связь</div>
+                    <div class="form">
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder=" ">
+                            <label for="form__input" class="form__label">Имя</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder=" ">
+                            <label for="form__input" class="form__label">Email</label>
+                        </div>
+                        <!--<div class="form__group">
+                            <textarea type="text" placeholder="Напишите ваш вопрос"></textarea>
+                            <label for="form__group">Вопросы/комментарии</label>
+                        </div>-->
+                        <button class="form__button">Отправить</button>
+                    </div>
+
+
+                    <!--<form class="contact-form">
+                        <div class="form-input">
+                            <label for="form-input__name">Ваше имя</label><br>
+                            <input type="text" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="form-input">
+                            <label for="form-input__email">Email</label><br>
+                            <input type="text" placeholder="Введите email">
+                        </div>
+                        <div class="form-input">
+                            <label for="form-input__message">Вопросы/комментарии</label><br>
+                            <textarea type="text" placeholder="Напишите нам"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>-->
+                </div>
             </main>
             <footer class="footer">
-                <div class="container">
-                    <div class="footer__row">
-                        <div class="footer__messangers">
-                            <div class="messanger"><a href="https://wa.me/79162796770"><img
-                                        src="./assets/images/whatsapp-icon.png" alt="whatsapp"></a></div>
-                            <div class="messanger"><a href="https://t.me/+79162796770"><img
-                                        src="./assets/images/telegram-icon.png" alt="telegram"></a></div>
-                            <div class="messanger"><a href="mailto:sumenas@mail.ru"><img
-                                        src="./assets/images/gmail-icon.png" alt="gmail"></a></div>
-                        </div>
+                <div class="footer__row">
+                    <div class="footer__messangers">
+                        <div class="messanger"><a href="https://wa.me/79162796770"><img
+                                    src="./assets/images/whatsapp-icon.png" alt="whatsapp"></a></div>
+                        <div class="messanger"><a href="https://t.me/+79162796770"><img
+                                    src="./assets/images/telegram-icon.png" alt="telegram"></a></div>
+                        <div class="messanger"><a href="mailto:sumenas@mail.ru"><img
+                                    src="./assets/images/gmail-icon.png" alt="gmail"></a></div>
                     </div>
                 </div>
             </footer>
