@@ -226,40 +226,6 @@ video {
     text-align: center;
 }
 
-/*Начало блока про платформы - Оксана*/
-
-.platformsinfo {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 150%;
-    color: #e87400;
-    margin-left: 220px;
-}
-
-.platforms {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 50px;
-    height: 240px;
-    width: 900px;
-    background-image: url(./assets/images/free-lesson.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.platformicons {
-    flex-direction: row;
-    align-content: center;
-    height: 100px;
-    width: 100px;
-    margin: 35px;
-}
-
-/*Конец блока про платформы - Оксана*/
-
 /*Ира - Блок цена и услуги*/
 .block-services {
     display: grid;
