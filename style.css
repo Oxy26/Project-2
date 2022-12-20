@@ -113,6 +113,12 @@ video {
     margin-left: 0px;
 }
 
+@media (max-width: 800px) {
+    .td1 {
+        flex: 50%;
+    }
+}
+
 /*Конец блока Оксаны */
 
 

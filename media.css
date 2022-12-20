@@ -1,5 +1,5 @@
 /*когда экран <900px*/
-.td1_background {
+/*.td1_background {
     background-image: url(./assets/images/germangirl1.png);
     height: 55vh;
     max-height: 60vh;
@@ -12,16 +12,17 @@
     float: right; 
     overflow-x: hidden;
     
-}
+}*/
 
  h1 {
-    margin-left: 250px;
+    margin-left: 200px;
     padding-top: 30px;
  }
 
 .block-video{
+    
 margin-top: 50px;
-margin-left: 80px;
+margin-left: 130px;
 }
 
 .paragraph{
