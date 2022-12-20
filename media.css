@@ -57,3 +57,13 @@ margin-left: 130px;
 font: bold 1.5em sans-serif;
 }
 
+.platforms {
+    width: 600px;
+    height: 200px;  
+}
+
+.platformicons {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 80px;
+}
