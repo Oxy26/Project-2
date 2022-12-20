@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,7 @@
     min-height: 100vh;
 }
 
-.wrapper{
+.wrapper {
     max-width: 1440px;
 }
 
@@ -122,7 +122,7 @@ video {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 7% 20% 20% 20% 20%);
 }
 
 .main__block1,
@@ -131,18 +131,20 @@ video {
 .main__block4 {
     display: flex;
     flex-direction: row;
-    width: 75%;
-    /*margin-left: 15%;*/
+    width: 80%;
+    margin-left: 15%;
 }
 
 .main__block1,
 .main__block3 {
-    margin-left: 15%;
+    justify-content: end;
+    /*margin-left: 15%;*/
 }
 
 .main__block2,
 .main__block4 {
-    margin-right: 15%;
+    justify-content: start;
+    /* margin-right: 15%;*/
 }
 
 .main__div_items {
@@ -151,9 +153,9 @@ video {
     align-items: center;
     margin: 0 auto;
     padding: 0;
-    height: 280px;
-    width: 320px;
-    background-image: url(./assets/blobs/Group\ 5.png);
+    height: 350px;
+    width: 450px;
+    background-image: url(./assets/blobs/Group\ 8\ \(1\).png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -184,8 +186,7 @@ video {
 }
 
 .main__div__img {
-    width: 35%;
-    padding-bottom: 22%;
+    width: 30%;
 }
 
 .main__div__block11 {
@@ -222,7 +223,8 @@ video {
 /*Ира - Блок цена и услуги*/
 .block-services {
     display: grid;
-    margin-left: -5%; /*чтобы не создавался скрол вправо*/
+    margin-left: -5%;
+    /*чтобы не создавался скрол вправо*/
     margin-top: 20px;
     margin-bottom: 50px;
     padding: 0;
@@ -288,7 +290,7 @@ video {
 
 .pricing-card__header {
     /*background-color: #fdc435;*/
-    font-family:'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 28px;
     display: flex;
     justify-content: center;
@@ -345,7 +347,7 @@ video {
     background-size: contain;
 }
 
-.free-lesson__text{
+.free-lesson__text {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -357,11 +359,12 @@ video {
     color: #cf0f0f;
 }
 
-.free-lesson__icon{
+.free-lesson__icon {
     margin-right: 30px;
     margin-left: 100px;
 }
-.free-lesson__icon img{
+
+.free-lesson__icon img {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -426,25 +429,25 @@ video {
 /*Ира - contact-form*/
 
 /*Second version of the form*/
-.contact-me{
+.contact-me {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.form{
+.form {
     width: 30%;
     padding: 32px;
 }
 
-.form__group{
+.form__group {
     position: relative;
     margin-bottom: 32px;
 
 }
 
-.form__label{
+.form__label {
     position: absolute;
     top: 0;
     z-index: -1;
@@ -453,7 +456,7 @@ video {
     left: 0;
 }
 
-.form__input{
+.form__input {
     width: 100%;
     padding: 0 0 10px 0;
     border: none;
@@ -462,11 +465,11 @@ video {
     outline: none;
 }
 
-.form__input:focus{
+.form__input:focus {
     border-bottom: 1px solid rgb(31, 31, 31);
 }
 
-.form__button{
+.form__button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -478,12 +481,12 @@ video {
 }
 
 .form__button:focus,
-.form__button:hover{
+.form__button:hover {
     background-color: #e87400b7;
 }
 
-.form__input:focus ~ .form__label,
-.form__input:not(:placeholder-shown) ~ .form__label{
+.form__input:focus~.form__label,
+.form__input:not(:placeholder-shown)~.form__label {
     top: -18px;
     font-size: small;
     color: rgb(182, 182, 182);
@@ -567,7 +570,7 @@ button{
     background-position: bottom;
 }
 
-.footer__row{
+.footer__row {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -587,7 +590,7 @@ button{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     margin: 0;
     margin-top: -5%;
 }
@@ -600,7 +603,8 @@ button{
     .pricing-card {
         flex: 50%;
     }
-    .free-lesson{
+
+    .free-lesson {
         display: flex;
         width: 100%;
         height: 130px;
@@ -608,7 +612,7 @@ button{
         border: 1px solid black;
     }
 
-    .free-lesson__text{
+    .free-lesson__text {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -616,16 +620,17 @@ button{
         margin-left: 0;
         font-size: medium;
     }
-    
+
     .free-lesson h2 span {
         color: #cf0f0f;
     }
-    
-    .free-lesson__icon{
+
+    .free-lesson__icon {
         margin-right: 20px;
         margin-left: 50px;
     }
-    .free-lesson__icon img{
+
+    .free-lesson__icon img {
         display: flex;
         flex-direction: row;
         justify-content: center;
