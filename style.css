@@ -38,19 +38,24 @@
     margin-bottom: 50px;
 }
 
-.main__div__icon h1 {
+/*.main__div__icon h1 {
     margin-left: 125px;
     margin-top: 0px;
-}
+}*/
 
 .td1_background h1{
-    margin-left: 100px;
-    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    margin: -3% 0 3% 0;
 } /*текст по центру */
 
+table{
+    width: 100%;
+    margin: 2% 0 0 0;
+}
 .paragraph {
     float: left;
-    margin-left: 50px;
+    margin-left: 150px;
     color: black;
     grid-row: 1/2;
     padding-top: 5px;
@@ -64,11 +69,12 @@
     justify-content: center;
     align-items: center;
     width: 480px;
-    margin-left: 50px;
-    margin-bottom: 50px;
+    /*margin-left: 50px;
+    margin-bottom: 50px;*/
     padding: 0;
     border-radius: 30px;
     overflow: hidden;
+    margin-bottom: 3%;
     border: 8px solid #fdc435e3;
 }
 
