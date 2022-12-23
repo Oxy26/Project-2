@@ -17,6 +17,20 @@
     max-width: 1440px;
 }
 
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 100%;
+    color: #e87400;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+    border: 1px solid black;
+}
+
 /*Блок Оксаны*/
 .header {
     display: flex;
@@ -24,10 +38,15 @@
     margin-bottom: 50px;
 }
 
-main__div__icon h1 {
+.main__div__icon h1 {
     margin-left: 125px;
     margin-top: 0px;
 }
+
+.td1_background h1{
+    margin-left: 100px;
+    margin-top: 0;
+} /*текст по центру */
 
 .paragraph {
     float: left;
@@ -136,7 +155,6 @@ video {
     height: 1800px;
     width: 100%;
     margin-top: 10%;
-    border: 1px solid black;
     /*display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 7% 20% 20% 20% 20%);*/
@@ -201,7 +219,6 @@ video {
     align-content: center;
     text-align: center;
     margin: 0 auto;
-    border: 1px solid black;
 }
 
 .main__div__icon {
@@ -212,7 +229,6 @@ video {
     /*margin-top: 50px;*/
     height: 50%;
     width: 80%;
-    border: 1px solid black;
 }
 
 .main__div__img {
@@ -273,7 +289,7 @@ video {
     font-size: 2.5rem;
     line-height: 150%;
     color: #e87400;
-    margin-left: 220px;
+    /*margin-left: 220px;*/
     margin-top: 0;
 }
 
@@ -285,7 +301,7 @@ video {
     margin-top: 50px;
     height: 240px;
     width: 900px;
-    background-image: url(./assets/images/free-lesson.svg);
+    background-image: url(./assets/images/platforms.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -312,27 +328,12 @@ video {
     margin-top: 20px;
     margin-bottom: 50px;
     padding: 0;
-    border: 1px solid black;
-}
-
-.title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 100%;
-    color: #e87400;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    width: 100%;
 }
 
 .block-services__prices {
     display: flex;
     flex-direction: row;
     width: 100%;
-    border: 1px solid black;
 }
 
 .pricing-table {
@@ -411,7 +412,6 @@ video {
     background-image: url(./assets/images/free-lesson.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    border: 1px solid black;
 }
 
 /*.free-lesson__text {
@@ -456,8 +456,9 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1300px;
+    margin: 0;
     overflow-x: auto;
-    border: 1px solid black;
 }
 
 .block-four__container {
@@ -473,14 +474,13 @@ video {
     text-align: center;
 }
 
-.block-four__title {
+/*.block-four__title {
     font-style: normal;
     font-weight: 700;
     font-size: 2.5rem;
     line-height: 150%;
     color: #e87400;
-    border: 1px solid black;
-}
+}*/
 
 .certificate {
     justify-self: center;
@@ -512,7 +512,7 @@ video {
 }
 
 .form {
-    width: 30%;
+    width: 100%;
     padding: 32px;
 }
 
@@ -692,7 +692,6 @@ video {
         margin: 0 10% 0 0;
         padding: 0;
         width: 60%;
-        border: 1px solid black;
     }
 
     .free-lesson h2 span {
