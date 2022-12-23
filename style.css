@@ -10,6 +10,7 @@
     min-height: 100vh;
     width: 100%;
     margin: 0 auto;
+    padding: 0;
 }
 
 .wrapper {
@@ -23,12 +24,7 @@
     margin-bottom: 50px;
 }
 
-.main{
-    display: inline-block;
-    width: 100%;
-}
-
-h1 {
+main__div__icon h1 {
     margin-left: 125px;
     margin-top: 0px;
 }
@@ -136,9 +132,11 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /*height: 100%;*/
     height: 1800px;
     width: 100%;
-    margin-top: ;
+    margin-top: 10%;
+    border: 1px solid black;
     /*display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 7% 20% 20% 20% 20%);*/
@@ -154,7 +152,7 @@ video {
     align-items: center;
     width: 90%;
     height: 20%;
-    margin: 0 0 0 10%;
+    margin: 0 auto;
     margin-bottom: 50px;
 }
 
@@ -189,12 +187,12 @@ video {
     /*border: 1px solid black;*/
 }
 
-.main__div__text{
+.main__div__text {
     display: flex;
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 26px;
+    font-weight: 500;
     color: black;
-    width: 80%;
+    width: 60%;
     height: 100%;
     padding-right: 3%;
     padding-left: 7%;
@@ -202,7 +200,8 @@ video {
     align-items: center;
     align-content: center;
     text-align: center;
-    /*border: 1px solid black;*/
+    margin: 0 auto;
+    border: 1px solid black;
 }
 
 .main__div__icon {
@@ -211,8 +210,9 @@ video {
     align-items: center;
     margin: 0 auto;
     /*margin-top: 50px;*/
-    height: 450px;
-    width: 760px;
+    height: 50%;
+    width: 80%;
+    border: 1px solid black;
 }
 
 .main__div__img {
@@ -233,22 +233,7 @@ video {
         flex: 50%;
     }
 
-    .main__div_items {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        padding: 0;
-        height: 100%;
-        min-width: 60%;
-        background-image: url(./assets/blobs/Group\ 8\ \(1\).png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        /*border: 1px solid black;*/
-    }
-
-    .main__div__text{
+    .main__div__text {
         display: flex;
         font-size: 16px;
         font-weight: 500;
@@ -317,11 +302,17 @@ video {
 
 /*Ира - Блок цена и услуги*/
 .block-services {
-    display: grid;
-    margin-left: -5%; /*чтобы не создавался скрол вправо*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*чтобы не создавался скрол вправо*/
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 20px;
     margin-bottom: 50px;
     padding: 0;
+    border: 1px solid black;
 }
 
 .title {
@@ -340,6 +331,8 @@ video {
 .block-services__prices {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    border: 1px solid black;
 }
 
 .pricing-table {
@@ -411,41 +404,48 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    margin-top: 50px;
-    height: 240px;
-    width: 900px;
+    text-align: center;
+    margin: 50px 0 0 0;
+    height: 320px;
+    width: 70%;
     background-image: url(./assets/images/free-lesson.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    border: 1px solid black;
 }
 
-.free-lesson__text {
+/*.free-lesson__text {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 0;
+    text-align: start;
+    margin: 0 10% 0 0;
+    padding: 0;
+    width: 60%;
+    border: 1px solid black;
 }
 
 .free-lesson h2 span {
     color: #cf0f0f;
 }
 
-.free-lesson__icon {
-    margin-right: 30px;
-    margin-left: 100px;
+/*.free-lesson__icon {
+    margin-right: 0;
+    margin-left: 5%;
+    padding: 0;
+    border: 1px solid black;
 }
 
 .free-lesson__icon img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    width: 150px;
-    margin: 0;
+    align-items: flex-start;
+    width: 120px;
     padding: 0;
-}
+    margin: 0 0 0 25%;
+}*/
 
 /*Конец блока Иры*/
 
@@ -457,6 +457,7 @@ video {
     justify-content: center;
     align-items: center;
     overflow-x: auto;
+    border: 1px solid black;
 }
 
 .block-four__container {
@@ -478,6 +479,7 @@ video {
     font-size: 2.5rem;
     line-height: 150%;
     color: #e87400;
+    border: 1px solid black;
 }
 
 .certificate {
@@ -611,18 +613,22 @@ video {
     margin: 10px;
 }
 
-.messanger img{
+.messanger img {
     transition: 0.5s;
 }
-.messanger img:hover{
+
+.messanger img:hover {
     transform: scale(1.2)
-    
 }
 
 @media screen and (max-width: 800px) {
+    .wrapper{
+        width: 100%;
+    }
+
     .pricing-card {
         flex: 50%;
-        margin: 5px; 
+        margin: 5px;
         padding: 0;
         background-size: 380px;
     }
@@ -639,24 +645,24 @@ video {
         text-transform: uppercase;
         margin: 0 0 0 10px;
     }
-    
+
     .price {
         color: black;
         margin: 0;
     }
-    
+
     .price span {
         font-size: 30px;
         font-weight: 700;
     }
-    
+
     .pricing-card div {
         font-size: 18px;
         padding: 10px;
         text-transform: uppercase;
         font-weight: 600;
     }
-    
+
     .pricing-card__details {
         text-align: center;
         color: black;
@@ -672,30 +678,32 @@ video {
         margin: 0 auto;
         margin-top: 50px;
         width: 100%;
-        background-image: url(./assets/images/free-lesson.svg);
+        /*background-image: url(./assets/images/free-lesson.svg);*/
         background-repeat: no-repeat;
         background-size: contain;
     }
-    
+
     .free-lesson__text {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start !important;
-        align-items: flex-start !important;
-        margin: 50px 70px 0 -80px;
-        font-size: 24px !important;
-        text-align: center;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        margin: 0 10% 0 0;
+        padding: 0;
+        width: 60%;
+        border: 1px solid black;
     }
-    
+
     .free-lesson h2 span {
         color: #cf0f0f;
     }
-    
+
     .free-lesson__icon {
         margin-right: 30px;
         margin-left: 100px;
     }
-    
+
     .free-lesson__icon img {
         display: flex;
         flex-direction: row;
