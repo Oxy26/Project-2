@@ -34,8 +34,7 @@
 }
 
 .td1 {
-    width: 100%;
-
+    width: 100vw;
 }
  
 .td2 {
@@ -66,3 +65,18 @@
     height: 70px;
     margin-bottom: 80px;
 }
+
+.header {
+width: 100vw;
+}
+
+.wrapper {
+    width: 100vw;
+}
+
+.body {
+    width: 100vw ;
+}
+
+
+ 
