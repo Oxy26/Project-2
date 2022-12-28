@@ -28,7 +28,6 @@
     margin-bottom: 50px;
     margin-top: 50px;
     width: 100%;
-    border: 1px solid black;
 }
 
 /*Блок Оксаны*/
@@ -51,7 +50,7 @@
 
 table{
     width: 100%;
-    margin: 2% 0 0 0;
+    margin: 1.5% 0 0 0;
 }
 .paragraph {
     float: left;
@@ -61,6 +60,7 @@ table{
     padding-top: 5px;
     margin-bottom: 50px;
     width: 600px;
+    font-size: 18px;
 }
 
 .block-video {
@@ -225,6 +225,24 @@ video {
     align-content: center;
     text-align: center;
     margin: 0 auto;
+}
+
+.main__div__text1, 
+.main__div__text2 {
+    display: flex;
+    font-size: 26px;
+    font-weight: 500;
+    color: black;
+    width: 60%;
+    height: 100%;
+    padding-right: 3%;
+    padding-left: 7%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: -5% 0 0 0;
+    /*border: 1px solid blue;*/
 }
 
 .main__div__icon {
@@ -509,7 +527,7 @@ video {
 
 /*Ира - contact-form*/
 
-/*Second version of the form*/
+/*Second version of the form
 .contact-me {
     display: flex;
     flex-direction: column;
@@ -571,26 +589,24 @@ video {
     top: -18px;
     font-size: small;
     color: rgb(182, 182, 182);
-}
+}*/
 
 
-/*Ира - footer*/
-.footer {
+/*Ира - contacts*/
+.contacts {
     display: flex;
-    flex-direction: row;
-    height: 260px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
     width: 100%;
+    height: 460px;
     padding: 0;
     justify-content: center;
     align-items: center;
-    background-image: url(./assets/images/footer-bg.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 1440px;
 }
 
-.footer__row {
+.contacts__row {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -601,22 +617,34 @@ video {
     padding: 0;
 }
 
-.footer img {
-    width: 36px;
-    height: 36px;
+.contacts img {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 20% 0 0 0;
 }
 
-.footer .footer__messangers {
+.contacts .contacts__messangers {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 0;
-    margin-top: -5%;
 }
 
-.footer .footer__messangers .messanger {
-    margin: 10px;
+.contacts .contacts__messangers .messanger {
+    margin: 50px;
+}
+
+.contacts__messangers{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 260px;
+    margin: 0;
+    background: url(./assets/images/contacts.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .messanger img {
@@ -625,6 +653,21 @@ video {
 
 .messanger img:hover {
     transform: scale(1.2)
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/images/footer-bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 1440px;
 }
 
 @media screen and (max-width: 800px) {
@@ -718,4 +761,12 @@ video {
         margin: 30px 50px 0 -40px;
         padding: 0;
     }
+
+    .contacts img {
+        width: 76px;
+        height: 76px;
+        margin: 20% 0 0 0;
+    }
 }
+
+
